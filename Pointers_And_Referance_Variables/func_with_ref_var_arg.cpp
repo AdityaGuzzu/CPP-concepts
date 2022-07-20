@@ -14,6 +14,8 @@ int main()
 	int x,y;
 	int &x_cpy = x;
 	int &y_cpy = y;
+	cout<<"Enter x and y\n";
+	cin>>x>>y;
 	cout<<"Before swapping "<<"x = "<<x<<"\ty = "<<y;
 	swap(x_cpy,y_cpy);
 	cout<<"\nx = "<<x<<"\ty = "<<y;
