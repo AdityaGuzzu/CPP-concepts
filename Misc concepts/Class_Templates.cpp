@@ -11,5 +11,5 @@ class test					//test is the class name here. We can create our own object names
 
 int main()
 {
-	test<int> cls;		//We've given T = int. Name of the object is cls. Its an instance of test
+	test<int> cls;			//We've given T = int. Name of the object is cls. Its an instance of test
 }
