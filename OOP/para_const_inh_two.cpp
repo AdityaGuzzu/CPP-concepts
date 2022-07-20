@@ -10,7 +10,7 @@ class parent
     int x;
     public:
     parent(int y): x(y) {cout<<"Welcome to the parent class\n";}      //parent class constructor
-    parent(){cout<<"Hello, Welcome to def const parent\n";}
+    parent(){cout<<"Hello, Welcome to def const parent\n";}           //Having a default constructor in bse class is a must
 };
 
 class child: public parent
