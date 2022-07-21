@@ -15,5 +15,5 @@ int main()
 	cin>>constraint;
 	cout<<"Now enter the string: ";
 	cin.getline(word,limit,constraint);
-	cout<<word;	
+	cout<<word;
 }
