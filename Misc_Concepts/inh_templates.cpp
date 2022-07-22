@@ -13,7 +13,6 @@ class parent			//parent class
 	}	
 };
 
-template<class T>
 class child: public parent<T>			//child class
 {
 	private:
@@ -29,6 +28,4 @@ int main()
 {
 	parent<int> obj;
 	child<int> obj2;
-	obj.show();			//Shows a garbage value of x in parent
-	obj2.show_child();  //Shows a garbage value of y in child
 }
