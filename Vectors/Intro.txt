@@ -1,0 +1,4 @@
+1.) What are vectors?
+    vaguely vectors are arrays whose size can change.
+    paste this in your browser:
+    https://cplusplus.com/reference/vector/vector/
