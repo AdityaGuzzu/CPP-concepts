@@ -19,10 +19,11 @@ class A
 
 int main()
 {
-	A *array[] ={
+	A *array[] =
+	{
 	new obj1(0),
 	new obj2(1),
 	new obj2(2)
-		}
+	}
 	
 }
