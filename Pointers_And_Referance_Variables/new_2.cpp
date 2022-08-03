@@ -9,6 +9,6 @@ int main()
     int *ptr = new int[size];
     for(int i=0;i<size;i++)
     {
-        cout<<endl<<(int)ptr[i]         //The issue of size variable being printed is solved.
+        cout<<endl<<(int)ptr[i];         //The issue of size variable being printed is solved.
     }
 }
