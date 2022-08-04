@@ -18,9 +18,10 @@ int main()
 {
     //IDK why but I am only getting the output of the first object created.
     std::vector<base *> base_ptrs;
-    base_ptrs[0] = new base(10,11);
-    base_ptrs[1] = new base(12,13);
-    base_ptrs[2] = new base(14,15);
+    for(int i=0; i<3; i++)
+    {
+        base_ptrs.push_back(new base(i,i+1));
+    }
     base_ptrs[1]->get_val();
     base_ptrs[2]->get_val();
 }
