@@ -16,7 +16,7 @@ class stack
 
     T top()
     {
-        return arr_ptr[top];
+        return arr_ptr[Top];
     }
 
     void push(T _element)
@@ -26,7 +26,7 @@ class stack
             if(Top != size)
             {
                 Top++;
-                arr_ptr[top] = _element;
+                arr_ptr[Top] = _element;
             }
             else
             {
@@ -42,9 +42,9 @@ class stack
 
     void pop()
     {
-        throw
+        try
         {
-             if(top != -1)
+             if(Top != -1)
             {
                 arr_ptr[Top] = 0;
                 Top--;
@@ -54,9 +54,24 @@ class stack
                 throw Top;
             }
         }
-       catch(int Top)
-       {
+        catch(int Top)
+        {
             std::cerr<<"\nStack Underflow";
-       }  
+        }  
+    }
+
+    bool empty()
+    {
+        return Top == -1;
     }
 };
+
+int main()
+{
+   stack<int> _int_stack(5);
+   for(int i=0; i<5; i++)
+   {
+        _int_stack.push(i);
+        std::cout<<std::endl<<_int_stack.top();
+   }
+}
