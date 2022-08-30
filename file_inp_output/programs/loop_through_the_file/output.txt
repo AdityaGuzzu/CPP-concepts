@@ -1,2 +1,2 @@
-
-THe number of successful reads are: 0
+35404550
+THe number of successful reads are: 4

@@ -1,0 +1,2 @@
+ello My name is aditya..
+ am trying to use getline in file operations
