@@ -1,0 +1,1 @@
+seekg() function returns the position where the next element will be read from the stream.
