@@ -18,4 +18,7 @@ int main()
     cout<<endl<<"The capacity of num_arr after resize is "<<num_arr.capacity();
     num_arr.shrink_to_fit();
     cout<<endl<<"The capacity of num_arr after shrink_to_fit_ is "<<num_arr.capacity();
+    num_arr.push_back(5);
+    cout<<endl<<"The size after appending is: "<<num_arr.size();
+    cout<<endl<<"The caparcoty after appending is: "<<num_arr.capacity();
 }

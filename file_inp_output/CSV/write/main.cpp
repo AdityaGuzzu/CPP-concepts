@@ -5,7 +5,7 @@
 #include<fstream>
 int main()
 {
-	std::ofstream OutFile("content.csv");
+	std::fstream OutFile("content.csv",);
 	int i=0;
 	while(i != 5)
 	{
