@@ -49,6 +49,12 @@ int main()
     int x = numbers.Top();
     //numbers.push();
     std::cout<<numbers.Top();
+    numbers.push(20);
+    numbers.push(30);
     std::cout<<std::endl<<numbers.Size();
+    if(numbers.IsEmpty())
+    std::cout<<"Queue empty";
+    else
+    std::cout<<std::endl<<"Queue Not empty";
 
 }

@@ -44,7 +44,7 @@ class stack
     {
         try
         {
-             if(Top != -1)
+            if(Top != -1)
             {
                 arr_ptr[Top] = 0;
                 Top--;
@@ -54,6 +54,7 @@ class stack
                 throw Top;
             }
         }
+
         catch(int Top)
         {
             std::cerr<<"\nStack Underflow";
@@ -68,10 +69,24 @@ class stack
 
 int main()
 {
-   stack<int> _int_stack(5);
-   for(int i=0; i<5; i++)
+    int size;
+    std::cout<<"Enter the size of the stack: ";
+    std::cin>>size;
+    std::cout<<"Pushing the elements from 0 to"<<size-1<<std::endl;
+    stack<int> _int_stack(size);
+   for(int i=0; i<size; i++)
    {
         _int_stack.push(i);
         std::cout<<std::endl<<_int_stack.top();
    }
+   std::cout<<"\nHow many elements do you want to pop?";
+   int pop_elements;
+   std::cin>>pop_elements;
+   for(int i=size;i>pop_elements;i--)
+   {
+    _int_stack.pop();
+   }
+   std::cout<<std::endl<<"Now printing the top: ";
+   std::cout<<std::endl<<_int_stack.top();
+
 }
