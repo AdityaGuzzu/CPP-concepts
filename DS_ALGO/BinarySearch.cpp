@@ -26,19 +26,24 @@ int main()
     std::cin>>search_elem;
     while(temp.size() > 1)
     {
-        if(*(temp.begin() + temp.size()/2) > search_elem)
+        std::vector<int>::iterator midway = temp.begin() + temp.size()/2;
+        if(*midway > search_elem)
         {
             std::vector<int>::iterator begin  = temp.begin();
             std::vector<int>::iterator end = temp.begin() + (temp.size()/2 -1);
             std::vector<int> temp2(begin,end);
             temp = temp2;
         }
-        else if(*(temp.begin() + temp.size()/2) < search_elem)
+        else if(*midway < search_elem)
         {
             std::vector<int>::iterator begin  = temp.begin();
             std::vector<int>::iterator end = temp.begin() + (temp.size()/2 -1);
             std::vector<int> temp2(begin,end);
             temp = temp2;
+        }
+        else
+        {
+            std::cout<<"Element found ";
         }
     }
 
