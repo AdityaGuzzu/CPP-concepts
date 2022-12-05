@@ -10,6 +10,8 @@ int main()
     std::vector<int> numbers;
     int size;
     int search_elem;
+
+    bool elem_found = false;
     std::cout<<"Enter the size of the vector: ";
     std::cin>>size;
     std::cout<<"Enter the vector elements: ";
@@ -26,25 +28,29 @@ int main()
     std::cin>>search_elem;
     while(temp.size() > 1)
     {
+        
         std::vector<int>::iterator midway = temp.begin() + temp.size()/2;
-        if(*midway > search_elem)
+        if(*midway < search_elem)
         {
-            std::vector<int>::iterator begin  = temp.begin();
-            std::vector<int>::iterator end = temp.begin() + (temp.size()/2 -1);
-            std::vector<int> temp2(begin,end);
+            std::vector<int>::iterator start  = midway;
+            std::vector<int>::iterator stop = temp.end();
+            std::vector<int> temp2(start,stop);
             temp = temp2;
         }
-        else if(*midway < search_elem)
+        else if(*midway > search_elem)
         {
-            std::vector<int>::iterator begin  = temp.begin();
-            std::vector<int>::iterator end = temp.begin() + (temp.size()/2 -1);
-            std::vector<int> temp2(begin,end);
+            
+            std::vector<int> temp2(temp.begin(),midway);
             temp = temp2;
         }
         else
         {
             std::cout<<"Element found ";
+            elem_found = true;
+            break;
         }
     }
+    if(!elem_found)
+    std::cout<<std::endl<<"ELement not found";
 
 }

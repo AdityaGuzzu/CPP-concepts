@@ -22,7 +22,7 @@ class queue
         this->prev = NULL;
         this->top = NULL;
         this->rear = NULL;
-        this->size = max_size;
+        this->max_size = size;
         this->size = 0;
     }
 

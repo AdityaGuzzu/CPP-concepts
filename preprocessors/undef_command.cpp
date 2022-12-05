@@ -5,5 +5,5 @@ int main()
 {
     std::cout<<HUNDRED;     //No error because 100 is replaced by 100
     #undef HUNDRED
-    std::cout<<HUNDRED;     //An error because now HUNDRED is now not replaced by 100 
+    std::cout<<HUNDRED;     //An error because now HUNDRED is now NOT replaced by 100 
 }
