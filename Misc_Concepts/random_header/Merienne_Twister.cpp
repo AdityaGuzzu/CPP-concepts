@@ -12,5 +12,5 @@ int random_num(int x)
     std::mt19937 generator (seed);
 
     //We are going ton generate a random number between 1 and 6
-    return (generator() % 6) + 1; 
+    return (generator() % x) + 1; 
 }
