@@ -5,7 +5,7 @@ void add(int x, int y)		//Function definition
 {
 	int z;			//A local variable with its scope within the func
 	z = x + y;
-	cout<<"\nThe sum of <<x<<" and "<<y<<" is "<<z;
+	cout<<"\nThe sum of "<<x<<" and "<<y<<" is "<<z;
 }
 
 void add(int,int); 		//Global declaration

@@ -1,0 +1,20 @@
+
+#include <iostream>
+#include <random> // for std::mt19937
+
+int main()
+{
+	std::mt19937 mt{}; // Instantiate a 32-bit Mersenne Twister
+
+	// Print a bunch of random numbers
+	for (int count{ 1 }; count <= 180; ++count)
+	{
+		std::cout << mt()%1000 << '\t'; // generate a random number
+
+		// // If we've printed 5 numbers, start a new row
+		// if (count % 5 == 0)
+		// 	std::cout << '\n';
+	}
+
+	return 0;
+}
