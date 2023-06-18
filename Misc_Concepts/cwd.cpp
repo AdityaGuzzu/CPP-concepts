@@ -11,5 +11,4 @@ int main()
     std::string name = "aditya";
     /*Chars are convertible to std::string*/
     std::cout<<std::endl<<cwd+name;
-
 }
