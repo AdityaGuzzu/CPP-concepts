@@ -4,6 +4,5 @@
 int main()
 {
     std::vector<int> nums;
-    
 
 }
