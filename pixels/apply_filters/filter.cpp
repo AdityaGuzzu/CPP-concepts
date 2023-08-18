@@ -11,7 +11,7 @@ int main()
     cin >> add_r;
     cin >> add_g;
     cin >> add_b;
-
+    
     //open the ppm image in read mode and another file in write mode
     ifstream img;
     ofstream new_img;
