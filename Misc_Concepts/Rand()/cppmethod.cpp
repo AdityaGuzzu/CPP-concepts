@@ -11,6 +11,7 @@ int main()
     std::uniform_int_distribution<int> dist(1,6);
     for(int counter=0; counter<10; counter++)
     {
+        
         std::cout<<std::endl<<dist(rd);
     }
     //working appearently

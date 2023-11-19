@@ -11,6 +11,17 @@
 //     std::vector<int> all_prices;
 // }
 
+#include <random>
+
+int random_num(int max) {
+    std::random_device rd;
+    std::mt19937 gen(rd());
+    std::uniform_int_distribution<> distr(1, max);
+    return distr(gen);
+}
+
+
+
 int main()
 {
     std::vector<std::string> category_names = {"Books", "Pens", "Pencils", "Exam Pads", "Glue", "Sharpeners", "Erasers", "Gifting","Misc"};
