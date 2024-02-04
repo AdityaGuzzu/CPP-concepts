@@ -1,0 +1,3 @@
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\opencvdemo.dir/objects.a
+C:\MinGW\bin\ar.exe qc CMakeFiles\opencvdemo.dir/objects.a @CMakeFiles\opencvdemo.dir\objects1.rsp
+C:\MinGW\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\opencvdemo.dir/objects.a -Wl,--no-whole-archive -o opencvdemo.exe -Wl,--out-implib,libopencvdemo.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\opencvdemo.dir\linkLibs.rsp

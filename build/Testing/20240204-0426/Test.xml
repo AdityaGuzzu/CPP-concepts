@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="Win32-mingw32-make"
+	BuildStamp="20240204-0426-Experimental"
+	Name="AdityaGuzzu"
+	Generator="ctest-3.28.2"
+	CompilerName="C:/MinGW/bin/g++.exe"
+	CompilerVersion="6.3.0"
+	OSName="Windows"
+	Hostname="AdityaGuzzu"
+	OSRelease=" Personal"
+	OSVersion=" (Build 22631)"
+	OSPlatform="AMD64"
+	Is64Bits="1"
+	VendorString="AuthenticAMD"
+	VendorID="Advanced Micro Devices"
+	FamilyID="15"
+	ModelID="0"
+	ProcessorCacheSize="64"
+	NumberOfLogicalCPU="12"
+	NumberOfPhysicalCPU="6"
+	TotalVirtualMemory="24928"
+	TotalPhysicalMemory="7520"
+	LogicalProcessorsPerPhysical="2"
+	ProcessorClockFrequency="2295"
+	>
+	<Testing>
+		<StartDateTime>Feb 04 09:56 India Standard Time</StartDateTime>
+		<StartTestTime>1707020795</StartTestTime>
+		<TestList/>
+		<EndDateTime>Feb 04 09:56 India Standard Time</EndDateTime>
+		<EndTestTime>1707020795</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>
